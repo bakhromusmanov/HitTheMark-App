@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D0934B502C9D8189006399F1 /* TheBullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0934B502C9D8189006399F1 /* HitTheMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitTheMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0934B532C9D8189006399F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0934B552C9D8189006399F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D0934B572C9D8189006399F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		D0934B472C9D8189006399F1 = {
 			isa = PBXGroup;
 			children = (
-				D0934B522C9D8189006399F1 /* TheBullsEye */,
+				D0934B522C9D8189006399F1 /* HitTheMark */,
 				D0934B512C9D8189006399F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		D0934B512C9D8189006399F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0934B502C9D8189006399F1 /* TheBullsEye.app */,
+				D0934B502C9D8189006399F1 /* HitTheMark.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0934B522C9D8189006399F1 /* TheBullsEye */ = {
+		D0934B522C9D8189006399F1 /* HitTheMark */ = {
 			isa = PBXGroup;
 			children = (
 				D0934B532C9D8189006399F1 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				D0934B5E2C9D818A006399F1 /* LaunchScreen.storyboard */,
 				D0934B612C9D818A006399F1 /* Info.plist */,
 			);
-			path = TheBullsEye;
+			path = HitTheMark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0934B4F2C9D8189006399F1 /* TheBullsEye */ = {
+		D0934B4F2C9D8189006399F1 /* HitTheMark */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0934B642C9D818A006399F1 /* Build configuration list for PBXNativeTarget "TheBullsEye" */;
+			buildConfigurationList = D0934B642C9D818A006399F1 /* Build configuration list for PBXNativeTarget "HitTheMark" */;
 			buildPhases = (
 				D0934B4C2C9D8189006399F1 /* Sources */,
 				D0934B4D2C9D8189006399F1 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TheBullsEye;
+			name = HitTheMark;
 			productName = TheBullsEye;
-			productReference = D0934B502C9D8189006399F1 /* TheBullsEye.app */;
+			productReference = D0934B502C9D8189006399F1 /* HitTheMark.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0934B4B2C9D8189006399F1 /* Build configuration list for PBXProject "TheBullsEye" */;
+			buildConfigurationList = D0934B4B2C9D8189006399F1 /* Build configuration list for PBXProject "HitTheMark" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0934B4F2C9D8189006399F1 /* TheBullsEye */,
+				D0934B4F2C9D8189006399F1 /* HitTheMark */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +294,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPQ98A8CD6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheBullsEye/Info.plist;
+				INFOPLIST_FILE = HitTheMark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit The Mark";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.dice-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +324,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DPQ98A8CD6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheBullsEye/Info.plist;
+				INFOPLIST_FILE = HitTheMark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hit The Mark";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.dice-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0934B4B2C9D8189006399F1 /* Build configuration list for PBXProject "TheBullsEye" */ = {
+		D0934B4B2C9D8189006399F1 /* Build configuration list for PBXProject "HitTheMark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0934B622C9D818A006399F1 /* Debug */,
@@ -353,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0934B642C9D818A006399F1 /* Build configuration list for PBXNativeTarget "TheBullsEye" */ = {
+		D0934B642C9D818A006399F1 /* Build configuration list for PBXNativeTarget "HitTheMark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0934B652C9D818A006399F1 /* Debug */,
