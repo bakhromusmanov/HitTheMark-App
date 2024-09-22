@@ -31,8 +31,14 @@ class ViewController: UIViewController {
         updateScore()
     }
     
-    func showAlert(){
-        let alert = UIAlertController(title: "Welldone!", message: "Your score is: \(score)/100", preferredStyle: .alert)
+    @IBAction func replayButtonPressed(_ sender: UIButton) {
+        round = 1
+        score = 0
+        startGame()
+    }
+    
+    @IBAction func infoButtonPressed(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Hit The Mark", message: "Developed by Bakhrom Usmanov", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
@@ -40,6 +46,13 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         sliderMark = slider.value
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Welldone!", message: "Your score is: \(score)/100", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func calculateScore() {
@@ -51,6 +64,7 @@ class ViewController: UIViewController {
         score += prevScore
         scoreLabel.text = "\(score)"
         round += 1
+        roundLabel.text = "\(round)"
     }
     
     func generateRandomNumber() -> Float {
@@ -58,8 +72,6 @@ class ViewController: UIViewController {
     }
     
     func startGame(){
-        round = 1
-        score = 0
         sliderMark = slider.value
         targetMark = generateRandomNumber()
         targetMarkLabel.text = "\(Int(targetMark.rounded()))"
