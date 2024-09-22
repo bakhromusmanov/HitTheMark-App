@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  TheBullsEye
+//  HitTheMark
 //
 //  Created by Bakhrom Usmanov on 20/09/24.
 //
