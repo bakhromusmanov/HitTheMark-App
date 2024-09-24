@@ -41,7 +41,9 @@ class Game {
     func calculateScore() {
         score = Int(((100 - abs(sliderMark - targetMark))).rounded())
         setFeedBack(to: score)
-        
+    }
+    
+    func updateRound(){
         totalScore += score
         generateRandomMark()
         setRound()

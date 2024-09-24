@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func hitButtonPressed(){
         game.calculateScore()
-        showAlert(title: game.feedBack, message: "Your score is: \(game.score)\nSlider was at value: \(Int(game.sliderMark.rounded()))")
-        updateUILabels()
+        showAlert(title: game.feedBack, message: "Your score is: \(game.score)\nSlider was at value: \(Int(game.sliderMark.rounded()))", handler: {[weak self] _ in
+            self?.startNewRound()})
     }
     
     @IBAction func replayButtonPressed(_ sender: UIButton) {
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func infoButtonPressed(_ sender: UIButton) {
-        showAlert(title: "Hit The Mark", message: "Developed by Bakhrom Usmanov")
+        showAlert(title: "Hit The Mark", message: "Developed by Bakhrom Usmanov", handler: nil)
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
@@ -43,9 +43,9 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    func showAlert(title: String, message: String){
+    func showAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)?){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: handler)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
@@ -71,6 +71,11 @@ extension ViewController {
     func startGame(){
         game.setSliderMark(to: slider.value)
         game.generateRandomMark()
+        updateUILabels()
+    }
+    
+    func startNewRound(){
+        game.updateRound()
         updateUILabels()
     }
 }
