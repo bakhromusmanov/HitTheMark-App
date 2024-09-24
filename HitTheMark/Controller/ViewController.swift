@@ -23,9 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func hitButtonPressed(){
         game.calculateScore()
-        showAlert(title: "Welldone!", message: "Your score is: \(game.score)/100")
-        updateScoreLabel()
-        updateRoundLabel()
+        showAlert(title: game.feedBack, message: "Your score is: \(game.score)\nSlider was at value: \(Int(game.sliderMark.rounded()))")
+        updateUILabels()
     }
     
     @IBAction func replayButtonPressed(_ sender: UIButton) {
@@ -50,22 +49,29 @@ extension ViewController {
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func updateUILabels(){
+        updateTargetLabel()
+        updateScoreLabel()
+        updateRoundLabel()
+    }
 
     func updateScoreLabel() {
         scoreLabel.text = "\(game.totalScore)"
     }
+    
+    func updateTargetLabel(){
+        targetMarkLabel.text = "\(Int(game.targetMark.rounded()))"
+    }
 
     func updateRoundLabel() {
-        game.setRound()
         roundLabel.text = "\(game.round)"
     }
     
     func startGame(){
         game.setSliderMark(to: slider.value)
         game.generateRandomMark()
-        targetMarkLabel.text = "\(Int(game.targetMark.rounded()))"
-        scoreLabel.text = "\(game.score)"
-        roundLabel.text = "\(game.round)"
+        updateUILabels()
     }
 }
 

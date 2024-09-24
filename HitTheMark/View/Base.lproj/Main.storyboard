@@ -39,7 +39,7 @@
                                 <color key="shadowColor" red="0.39607840779999998" green="0.18823529780000001" blue="0.078431375319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="51" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-m7-yq8">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vSN-m7-yq8">
                                 <rect key="frame" x="111.08147804190105" y="168.50000000001648" width="444.00000000007196" height="41.000000000003183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
