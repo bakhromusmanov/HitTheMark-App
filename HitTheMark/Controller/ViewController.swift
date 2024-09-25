@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSlider()
         startGame()
     }
     
@@ -42,6 +43,13 @@ class ViewController: UIViewController {
 }
 
 extension ViewController {
+    
+    func setSlider(){
+        slider.setThumbImage(#imageLiteral(resourceName: "SliderThumb-Normal"), for: .normal)
+        slider.setThumbImage(#imageLiteral(resourceName: "SliderThumb-Highlighted"), for: .highlighted)
+        slider.setMinimumTrackImage(#imageLiteral(resourceName: "SliderTrackLeft"), for: .normal)
+        slider.setMaximumTrackImage(#imageLiteral(resourceName: "SliderTrackRight"), for: .normal)
+    }
     
     func showAlert(title: String, message: String, handler: ((UIAlertAction) -> Void)?){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
