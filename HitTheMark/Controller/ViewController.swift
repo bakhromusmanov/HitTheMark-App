@@ -33,10 +33,6 @@ class ViewController: UIViewController {
         startGame()
     }
     
-    @IBAction func infoButtonPressed(_ sender: UIButton) {
-        showAlert(title: "Hit The Mark", message: "Developed by Bakhrom Usmanov", handler: nil)
-    }
-    
     @IBAction func sliderMoved(_ slider: UISlider) {
         game.setSliderMark(to: slider.value)
     }

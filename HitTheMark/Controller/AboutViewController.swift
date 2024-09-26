@@ -6,24 +6,28 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadWebViewContent()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var webView: WKWebView!
+    
+    @IBAction func closeButtonPressed(_ sender: UIButton){
+        dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+}
+extension AboutViewController {
+    func loadWebViewContent() {
+        if let url = Bundle.main.url(
+            forResource: "HitTheMark", withExtension: "html") {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
 }
