@@ -40,6 +40,15 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
+    func fadeScreen(){
+        let transition = CATransition()
+        transition.type = CATransitionType.fade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        
+        view.layer.add(transition, forKey: nil)
+    }
+    
     func setSlider(){
         slider.setThumbImage(#imageLiteral(resourceName: "SliderThumb-Normal"), for: .normal)
         slider.setThumbImage(#imageLiteral(resourceName: "SliderThumb-Highlighted"), for: .highlighted)
@@ -73,6 +82,7 @@ extension ViewController {
     }
     
     func startGame(){
+        fadeScreen()
         game.setSliderMark(to: slider.value)
         game.generateRandomMark()
         updateUILabels()

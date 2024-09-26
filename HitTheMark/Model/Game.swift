@@ -27,9 +27,9 @@ class Game {
     
     func setFeedBack(to value: Int){
         switch value {
-        case 1..<30: feedBack = "Not even close..."
-        case 30..<60: feedBack = "You almost had it!"
-        case 60...100: feedBack = "Perfect!"
+        case 1..<80: feedBack = "Not even close..."
+        case 80..<95: feedBack = "You almost had it!"
+        case 95...100: feedBack = "Perfect!"
         default: return
         }
     }
