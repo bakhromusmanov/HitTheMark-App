@@ -1,5 +1,5 @@
 # Hit The Mark 🎯
-### Created by Bakhrom Usmanov
+### Created by Bakhrom Usmanov using UIKit
 
 Welcome to **Hit The Mark**, an intuitive and fun game built for iOS where players aim to get as close to a randomly chosen target value as possible using a slider.
 
