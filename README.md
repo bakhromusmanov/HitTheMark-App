@@ -21,6 +21,7 @@ Players can press the **"Start Over"** button (represented by the curly arrow at
 
 ## 🖼️ Screenshots
 
+![Simulator Screenshot 1](Simulator%20Screenshot%20-%200.png)
 ![Simulator Screenshot 1](Simulator%20Screenshot%20-%201.png)
 ![Simulator Screenshot 2](Simulator%20Screenshot%20-%202.png)
 ![Simulator Screenshot 3](Simulator%20Screenshot%20-%203.png)
