@@ -21,12 +21,6 @@ The goal of the game is to put the bull’s eye (located on a slider that ranges
 ### Restarting the game:
 Players can press the **"Start Over"** button (represented by the curly arrow at the bottom-left corner of the screen) to reset the score to 0 and start fresh.
 
-## 🖼️ Screenshots
-![Simulator Screenshot 1](Simulator%20Screenshot%20-%201.png)
-![Simulator Screenshot 2](Simulator%20Screenshot%20-%202.png)
-![Simulator Screenshot 3](Simulator%20Screenshot%20-%203.png)
-![Simulator Screenshot 4](Simulator%20Screenshot%20-%204.png)
-
 ## 🚀 Features
 - Random target generation each round.
 - User-friendly slider with no visible current value, adding to the challenge.
